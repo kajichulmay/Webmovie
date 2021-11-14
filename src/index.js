@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { MovieContextProvider } from './context/MovieContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MovieContextProvider>
+      <App />
+    </MovieContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

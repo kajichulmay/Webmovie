@@ -1,38 +1,186 @@
 .App {
-  text-align: center;
+  background-color: #dbd8e3;
+  color: #352f44;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: #dbd8e3;
+}
+.containerBlock {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  /* outline: 2px dashed red; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header */
+
+.header {
+  background-color: #2a2438;
+  height: 60px;
+  color: #fffdf6;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #5a5a5591;
+
+  /* outline: 2px dashed red; */
+}
+.logoImgHeader {
+  height: 100%;
+}
+.logoImgHeader > img {
+  height: 100%;
+}
+.nameBrands {
+  margin-left: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Searchbox */
+
+.searchBox {
+  width: 200px;
+  border: none;
+  /* background: none; */
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.searchBox:focus {
+  outline: none;
+}
+/* Home */
+.homePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 50px; */
+  /* outline: 2px dashed red; */
+}
+.movieBlock {
+  /* margin-top: 40px; */
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  /* outline: 2px dashed red; */
+}
+
+.movieBlock {
+  width: 100%;
+
+  /* height: 500px; */
+  /* outline: 2px dashed red; */
+}
+
+/* Banner */
+
+.Banner {
+  width: 100%;
+
+  margin-bottom: 50px;
+  /* outline: 2px dashed red; */
+}
+.Banner > img {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #5c5470;
+  color: #fffdf6;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.containerFooter {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+.logoImg {
+  width: 10%;
+  margin-right: 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.logoImg > img {
+  width: 100%;
+}
+.address {
+  margin-right: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social {
+  /* outline: 2px dashed red; */
+  height: 100%;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social > * {
+  width: 100%;
+  font-size: 2rem;
+  /* outline: 2px dashed red; */
+  text-align: center;
+  cursor: pointer;
+}
+.movieList {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* outline: 2px dashed red; */
+}
+.boxMovie {
+  /* outline: 2px dashed red; */
+
+  margin-right: 20px;
+  /* width: 200px; */
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.boxImgCover {
+  /* outline: 2px dashed red; */
+  width: 200px;
+  height: 300px;
+}
+
+.boxImgCover > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 20px 2px;
+}
+
+.textTitle {
+  margin-top: 1rem;
+  /* text-align: center; */
+  font-weight: bold;
+}
+
+.textTitle:hover {
+  color: #fffdf6;
+  cursor: pointer;
+}
+.priceMovie {
+  /* text-align: center; */
+}
+.cart {
+  /* position: absolute; */
+  cursor: pointer;
 }
